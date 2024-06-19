@@ -1,20 +1,41 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="secondary">
     <ion-title>
-      Blank
+      APP BMI
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content class="ion-padding" [fullscreen]="true" color="dark">
+  <div class="ion-text-center">
+    <img src="../../assets/img/01.png" style="width: 50%;">
   </div>
+  <ion-card color="success" class="ion-padding">
+    <ion-card color="dark">
+      <div class="ion-padding">
+      <ion-input label="กรอกน้ำหนัก" placeholder="kg"></ion-input>
+      <ion-input label="กรอกน้ำหนัก" placeholder="cm"></ion-input>
+    </div>
+    </ion-card>
+
+  <div class="ion-text-center">
+    <ion-button color="light" size="large" expand="block" shape="round" color="warning">
+      คำนวน
+    </ion-button>
+  </div>
+</ion-card>
+
+<div class="ion-text-center">
+  <ion-button color="light" size="large" expand="block" color="secondary">
+    ผลลัพธ์
+  </ion-button>
+</div>
+
+<div class="ion-text-center">
+  <ion-button color="light" size="large" expand="block" color="danger">
+    แปรผล
+  </ion-button>
+
+</div>
+
 </ion-content>
